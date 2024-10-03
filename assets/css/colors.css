@@ -1,0 +1,117 @@
+:root {
+  --primary-color: rgba(90, 74, 210, 1);
+  --secondary-color: rgba(146, 118, 241, 1);
+  --bg-color: #1f2336;
+  --btn-bg-color: #313852;
+  --input-bg-color: #40405647;
+  --active-color: #797fff;
+  --color-white: #ffffff;
+  --semi-white: #b2b2b4;
+  --text-color: #666d8d;
+  --card-color: #25293d;
+  --icon-color: #72799b;
+  --icon-color2: #666d8d;
+  --border-color: #2b3046;
+  --border-color2: #797d92;
+  --selectItem-hover: #5a5a5ab5;
+  --placeholder-color: #81828b;
+  --approved-color: #31cf80;
+  --rejected-color: #f86552;
+  --pending-color: #facc26;
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+.bg-main {
+  background-color: var(--bg-color);
+}
+.bg-secondary {
+  background-color: var(--secondary-color) !important;
+}
+
+.bg-btn {
+  background-color: var(--btn-bg-color) !important;
+}
+
+.bg-input {
+  background-color: var(--input-bg-color);
+}
+
+.bg-active {
+  background-color: var(--active-color) !important;
+}
+
+.bg-white {
+  background-color: var(--color-white);
+}
+
+.bg-card {
+  background-color: var(--card-color);
+}
+
+.bg-semi-white {
+  background-color: var(--semi-white);
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.text-white-dark, .icon-white {
+  color: var(--color-white);
+}
+
+.text-color, .provider-text {
+  color: var(--text-color);
+}
+
+.icon-color {
+  color: var(--icon-color2);
+}
+
+
+.text-icon {
+  color: var(--icon-color);
+}
+
+
+.text-placeholder {
+  color: var(--placeholder-color);
+}
+
+.border-color {
+  border-color: var(--border-color);
+}
+
+.border-color2 {
+  border-color: var(--border-color2);
+}
+.text-gradient {
+  background: linear-gradient(to right, #9b94fd, #c472ec);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.bg-btn-gradient{
+    background: linear-gradient(to right, #886eec, #6553d8) ;
+}
+
+.approved {
+  color: var(--approved-color);
+}
+.rejected {
+  color: var(--rejected-color);
+}
+.pending {
+  color: var(--pending-color);
+}
+
+.lng-btn:hover {
+    background-color: var(--card-color);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }

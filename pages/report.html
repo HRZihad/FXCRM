@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FXCRM>Report</title>
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/images/logo/favicon.png"
+    />
+    <!-- ------------font connect ----------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ------------connect with bootstrap-------------- -->
+    <link
+      rel="stylesheet"
+      href="../bootstrap-5.2.3-dist/css/bootstrap.min.css"
+    />
+
+    <!-- ----------------connect font-awesome icon---------------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- --------------------custom style ---------------------- -->
+    <link rel="stylesheet" href="../assets/css/common.css" />
+    <link rel="stylesheet" href="../assets/css/report.css" />
+    <link rel="stylesheet" href="../assets/css/colors.css" />
+  </head>
+  <body class="bg-main ">
+    <div class="row">
+      <nav id="sidebar" class="col navbar border-color position-relative sidebar">
+        <div
+          class="w-100 h-100 d-flex flex-column justify-content-center gap-5"
+        >
+          <ul>
+            <li>
+              <a href="dashboard.html"
+                ><i class="fa-solid fa-house"></i
+                ><span class="sidebar-item">Dashboard</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-user-gear"></i
+                ><span class="sidebar-item">My Account</span></a
+              >
+            </li>
+            <li>
+              <a href="finance.html"
+                ><i class="fa-solid fa-dollar-sign"></i
+                ><span class="sidebar-item">Finance</span></a
+              >
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="report.html"
+                ><i class="fa-solid fa-flag"></i
+                ><span class="sidebar-item">Reports</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-regular fa-star"></i
+                ><span class="sidebar-item">Reports</span></a
+              >
+            </li>
+            <li>
+              <a href="transaction.html"
+                ><i class="fa-solid fa-rocket"></i
+                ><span class="sidebar-item">Transfer</span></a
+              >
+            </li>
+            <li>
+              <a href="support.html"
+                ><i class="fa-solid fa-envelope"></i
+                ><span class="sidebar-item">Support</span></a
+              >
+            </li>
+            <li>
+              <a href="settings.html"
+                ><i class="fa-solid fa-gear"></i
+                ><span class="sidebar-item">Settings</span></a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div id="custom-icon" class="custom-icon">
+          <i class="fa-solid fa-chevron-left fa-sm" style="color: #666d8d"></i>
+        </div>
+        <div id="bar-icon" class="bar-icon">
+          <i class="fa-solid fa-bars fa-lg" style="color: #666d8d"></i>
+        </div>
+      </nav>
+
+      <!-- Middle Section Start Here -->
+      <div class="col main-content px-4">
+        <div class="mobile-view-menu pe-3 d-block d-md-none">
+          <i class="fa-solid fa-bars fa-lg" style="color: #666d8d"></i>
+        </div>
+        <!-- tab section start here -->
+
+        <div
+          class="d-flex justify-content-between align-items-center py-5 py-md-3"
+        >
+          <!-- Tab Start here -->
+
+          <div class="tab-container" style="width: 60%">
+            <ul class="tab-content">
+              <li class="tab-item active-tab">Overview</li>
+              <li class="tab-item">Clients</li>
+              <li class="tab-item">Account</li>
+              <li class="tab-item">Payments</li>
+            </ul>
+          </div>
+          <!-- Tab End here -->
+
+          <div class="">
+            <button
+              class="py-2 px-2 border-0 bg-transparent manage-btn btn-ripple mb-4 d-none d-xl-inline-block"
+            >
+              Manage
+            </button>
+            <button
+              class="border-0 bg-transparent mb-4 d-inline-block d-xl-none right-bar"
+            >
+              <i
+                class="fa-solid fa-bars-staggered fa-lg"
+                style="color: #666d8d"
+              ></i>
+            </button>
+          </div>
+        </div>
+        <!-- tab section end here -->
+
+        <div class="row w-100">
+          <div class="col-lg-6 col-xl-3 order-1 pe-lg-3 pe-xl-0">
+            <!-- yearly turnover card section start -->
+            <div class="d-flex gap-3 w-100">
+              <div class="turnover-card w-100 bg-primary">
+                <div class="icon-white">
+                  <i class="fa-solid fa-city fa-xl" ></i>
+                </div>
+                <div class="text-white-dark">
+                  <p class="balance mt-4 mb-2" style="font-size: 42px">$9</p>
+                  <p style="font-size: 15px">Yearly</p>
+                  <p class="fs-6">Turnover</p>
+                </div>
+              </div>
+              <div
+                class="turnover-card w-100 bg-secondary"
+                
+              >
+                <div class="icon-white">
+                  <i class="fa-solid fa-city fa-xl" ></i>
+                </div>
+                <div class="text-white-dark">
+                  <p class="balance mt-4 mb-2" style="font-size: 42px">$9</p>
+                  <p style="font-size: 15px">Yearly</p>
+                  <p class="fs-6">Turnover</p>
+                </div>
+              </div>
+            </div>
+            <!-- yearly turnover card section end -->
+
+            <!-- city of London section  -->
+            <div class="city-card bg-card p-4 mt-3">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="text-color fs-4 mb-0">London</p>
+                  <p class="text-white-dark  fs-4 countryName">United Kingdom</p>
+                </div>
+                <div class="city-card-icon bg-primary">
+                  <span class="icon-white"> <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between mt-4 gap-xl-1">
+                <div class="img-container">
+                  <img src="../assets/admin/image/img-1.png" alt="" />
+                </div>
+                <div class="img-container">
+                  <img src="../assets/admin/image/img-2.png" alt="" />
+                </div>
+                <div class="img-container">
+                  <img src="../assets/admin/image/img-3.png" alt="" />
+                </div>
+                <div class="img-container">
+                  <img src="../assets/admin/image/img-4.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Earning Section(show earning per day/month) -->
+          <div
+            class="col-xl-6 px-xl-4 mt-4 mt-xl-0 order-2 order-lg-3 order-xl-2"
+          >
+            <div class="earning-graph-container bg-card px-4 pt-4">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <p class="text-color fs-4 mb-0">Earning</p>
+                  <p class="fw-bold text-white-dark  fs-2 mb-0 total-earning" style="letter-spacing: 2px;">
+                    $9249.81
+                  </p>
+                </div>
+                <div class="master-card">
+                  <img src="../assets//admin/image/master-card.png" alt="" />
+                </div>
+              </div>
+              <div id="show-earning-graph">
+                <div id="show_e-graph">
+                  <!-- show the graph here -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xl-3 order-3 order-lg-2 order-xl-3 ps-lg-3 ps-xl-0">
+            <div class="carousel-container bg-card mt-4 mt-lg-0">
+              <div
+                id="carouselExampleControls"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="../assets//admin/image/slide/img-1.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../assets//admin/image/slide/img-2.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../assets//admin/image/slide/img-3.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="../assets//admin/image/slide/img-4.png"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleControls"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleControls"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- multiple stroke line chart -->
+        <div class="row mt-3">
+          <div
+            class="col-xl-8 multiple-line-chart bg-card position-relative mt-4 mt-lg-0"
+          >
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="analytics-section-title text-white-dark">Analytics</div>
+              <div class="analytics-section-btn">
+                <div class="position-relative">
+                  <input
+                    type="text"
+                    id="method-field"
+                    class="input-field px-3 text-color bg-input "
+                    placeholder="10.7 - 16.7"
+                  />
+                  <span class="input-icon icon-color" id="method-field-icon"
+                    ><i
+                      class="fa-solid fa-caret-down"
+                      
+                    ></i
+                  ></span>
+                  <div class="option-group" style="display: none">
+                    <p>10.7 - 16.7</p>
+                    <p id="bank">17.7 - 20.7</p>
+                    <p id="crypto">21.7 - 30.7</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="line-chart-section">
+              <div id="chart-multiple-line" class="">
+                <!-- show multiple line chart -->
+              </div>
+            </div>
+          </div>
+          <!-- range-bar -->
+          <div class="col-xl-4 ps-xl-4 mt-4 mt-xl-0 mb-4 mb-xxl-0">
+            <div class="rangebar-container bg-card">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="range-bar-title text-white-dark">Statistics</div>
+                <div class="city-card-icon bg-primary rangeBar-section_icon icon-white">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+              <div class="range-bar-section">
+                <div id="show-rangebar">
+                  <!-- bar chart (rangBar) -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Middle Section End Here -->
+
+      <!-- Right side Section Start -->
+
+      <div class="col right-navbar d-none d-xl-block w-75">
+        <!-- Right side navbar start here -->
+
+        <div class="right-top-navbar border-color">
+          <div class="right-top-section px-4">
+            <div class="d-flex justify-content-center align-items-center gap-3">
+              <div class="icon-color">
+                <i class="fa-solid fa-bell fa-lg" ></i>
+              </div>
+              <div>
+                <button class="stat-btn btn-ripple lng-btn text-white-dark">ENG</button>
+              </div>
+              <div class="d-lg-flex d-none">
+                <span class="dark hover" hidden="true">
+                  <i class="fa-solid fa-sun fa-lg"></i>
+                </span>
+
+                <span class="light" style="height: 24px; width: 24px;">
+                  <img src="../assets/images/icon/sun.png" alt="sun" style="height: 100%; width: 100%;" />
+                </span>
+              </div>
+            </div>
+            <div class="d-flex gap-2 align-items-center">
+              <div class="text-end fw-light">
+                <p class="mb-0 text-white-dark  fs-6 userName">Robert Downy Jr.</p>
+                <p class="mb-0 text-style text-color">Super Admin</p>
+              </div>
+              <div class="user-container">
+                <img
+                  src="../assets/images/icon/man.png"
+                  class="user"
+                  alt="user image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Super admin section -->
+
+        <div class="px-4">
+          <div class="text-center py-4">
+            <p class=" text-white-dark  fs-3 superAdmin">Super Admin Access</p>
+            <div
+              class="d-flex gap-3 justify-content-center align-items-center mt-2"
+            >
+              <p class=" text-color fs-6 fw-light mb-0">View Analytics</p>
+              <div class="analytics-part-icon icon-white">
+                <i class="fa-solid fa-arrow-right" style="color: #ffffff"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Analytics Card start here -->
+          <div class="d-flex gap-4 flex-column">
+            <div class="chart-card bg-card analytics-card px-3">
+              <div class="d-flex align-items-center gap-0">
+                <div class="block-icon icon-white">
+                  <i class="fa-solid fa-city fa-lg" style="color: #ffffff"></i>
+                </div>
+                <div class="text-content-item text-wrap">
+                  <p class="text-color" style="font-size: 14px">
+                    Earned This Month
+                  </p>
+                  <p class="text-style2 text-white-dark  earningAmt">829</p>
+                </div>
+              </div>
+              <div class="analytics-part-icon2 icon-white">
+                <i class="fa-solid fa-chevron-right" style="color: #ffffff"></i>
+              </div>
+            </div>
+            <div class="chart-card bg-card analytics-card px-3">
+              <div class="d-flex align-items-center gap-0">
+                <div class="block-icon icon-white">
+                  <i class="fa-solid fa-city fa-lg" ></i>
+                </div>
+                <div class="text-content-item text-wrap">
+                  <p class="text-color" style="font-size: 14px">
+                    Earned This Month
+                  </p>
+                  <p class="text-style2 text-white-dark  earningAmt">3460</p>
+                </div>
+              </div>
+              <div class="analytics-part-icon2 bg-active icon-white">
+                <i class="fa-solid fa-chevron-right" ></i>
+              </div>
+            </div>
+            <div class="chart-card bg-card analytics-card px-3">
+              <div class="d-flex align-items-center gap-0">
+                <div class="block-icon icon-white bg-active">
+                  <i class="fa-solid fa-city fa-lg" ></i>
+                </div>
+                <div class="text-content-item text-wrap">
+                  <p class="text-color" style="font-size: 14px">
+                    Earned This Month
+                  </p>
+                  <p class="text-style2 text-white-dark earningAmt">$89,736</p>
+                </div>
+              </div>
+              <div class="analytics-part-icon2 icon-white bg-active">
+                <i class="fa-solid fa-chevron-right" ></i>
+              </div>
+            </div>
+          </div>
+          <!-- Analytics Card end here -->
+
+          <div class="purchase-section">
+            <div class="purchase-card">
+              <div class="purchase-card-img">
+                <img src="../assets/admin/image/demo.png" alt="" />
+              </div>
+              <div>
+                <p class="text-center text-style text-color pb-5">
+                  Buy Pro Account to explore <br />
+                  Premium Features
+                </p>
+              </div>
+              <div>
+                <button
+                  class="px-4 py-1 bg-transparent text-white-dark bg-btn-gradient rounded-5 btn-ripple purchase_now_btn"
+                  style="font-size: 14px"
+                >
+                  Purchase Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- script added -->
+
+    <script src="../bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
+    <script src="../bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+
+    <script src="../jQuery/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <!-- charts js file   -->
+    <script src="../assets/charts/rangeBar.js"></script>
+    <script src="../assets/charts/earningLineChart.js"></script>
+    <script src="../assets/charts/multipleStrokeLine.js"></script>
+
+    <!-- page js  -->
+    <script src="../script/script.js"></script>
+    <script src="../script/theme.js"></script>
+  </body>
+</html>

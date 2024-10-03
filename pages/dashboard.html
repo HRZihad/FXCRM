@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FXCRM>Dashboard</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/images/logo/favicon.png"
+    />
+    <!-- ------------font connect ----------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ------------connect with bootstrap-------------- -->
+    <link
+      rel="stylesheet"
+      href="../bootstrap-5.2.3-dist/css/bootstrap.min.css"
+    />
+
+    <!-- ----------------connect font-awesome icon---------------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+
+    <!-- --------------------custom style ---------------------- -->
+    <link rel="stylesheet" href="../assets/css/common.css" />
+    <link rel="stylesheet" href="../assets/css/dashboard.css" />
+    <link rel="stylesheet" href="../assets/css/colors.css" />
+  </head>
+  <body class="bg-main ">
+    <div class="">
+      <div class="row">
+        <!-- Sidebar -->
+        <nav id="sidebar" class="col navbar border-color position-relative sidebar">
+          <ul>
+            <li>
+              <a href="dashboard.html"
+                ><i class="fa-solid fa-house"></i
+                ><span class="sidebar-item">Dashboard</span></a
+              >
+            </li>
+            <li>
+              <a href="transaction.html"
+                ><i class="fa-solid fa-dollar-sign"></i
+                ><span class="sidebar-item">Finance</span></a
+              >
+            </li>
+            <li>
+              <a href="report.html"
+                ><i class="fa-solid fa-flag"></i
+                ><span class="sidebar-item">Report</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-envelope"></i
+                ><span class="sidebar-item">Support</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-gear"></i
+                ><span class="sidebar-item">Settings</span></a
+              >
+            </li>
+          </ul>
+
+          <div id="custom-icon" class="custom-icon">
+            <i
+              class="fa-solid fa-chevron-left fa-sm"
+              style="color: #666d8d"
+            ></i>
+          </div>
+          <div id="bar-icon" class="bar-icon">
+            <i class="fa-solid fa-bars fa-lg" style="color: #666d8d"></i>
+          </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="col main-content">
+          <div class="search-bar">
+            <div class="d-flex align-items-center">
+              <div class="mobile-view-menu pe-3 d-block d-md-none">
+                <i class="fa-solid fa-bars fa-lg" style="color: #666d8d"></i>
+              </div>
+              <div class="logo d-block d-sm-none">
+                <img src="../assets/images/logo/logo.png" alt="" />
+              </div>
+            </div>
+            <div class="d-flex gap-5">
+              <div class="d-none d-sm-flex align-items-center">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search" class="search-box" />
+              </div>
+              <div class="d-flex align-items-center gap-2 gap-sm-5">
+                <span class="dark hover" hidden="true">
+                  <i class="fa-solid fa-sun fa-lg"></i>
+                </span>
+
+                <span class="light" style="height: 24px; width: 24px;">
+                  <img src="../assets/images/icon/sun.png" alt="sun" style="height: 100%; width: 100%;" />
+                </span>
+
+                <div
+                  class="user-container rounded-circle d-flex justify-content-center align-items-center"
+                >
+                  <img src="../assets/images/icon/man.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-area">
+            <div class="d-none d-sm-block">
+              <h2 class="pageTitle" style="font-size: 30px">FXCRM</h2>
+              <div class="d-flex justify-content-between">
+                <h1 class="hero-title">Best Forex CRM</h1>
+                <div class="provider d-flex justify-content-end gap-3">
+                  <p class="providers-num fw-bold text-gradient">56</p>
+                  <div class="provider-text d-flex gap-3">
+                    <p class="">Providers</p>
+                    <span class="text-icon"><i class="fa-solid fa-rotate"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-3">
+              <div class="row px-0">
+                <!-- ----------------------------------------------------------------------||Balance area start---------------------------------- -->
+                <div class="col-xl-7 col-xxl-6">
+                  <div class="row g-3">
+                    <!-- ----------------------------------------------------------------------||Left side area start (Donut Chart)---------------------------------- -->
+                    <div class="col-lg-6 pe-lg-4">
+                      <div class="chart-container">
+                        <div class="donut-chart">
+                          <div id="chart">
+                            <!-- <img
+                              src="../assets/images/icon/chart.png"
+                              class="img-fluid"
+                              alt=""
+                            /> -->
+                          </div>
+                        </div>
+                        <div class="text-center pt-2">
+                          <h2
+                            class="fs-2"
+                            style="color: #f0baff; letter-spacing: 3px"
+                          >
+                            620.58k
+                          </h2>
+                          <p class="text-style2 text-white-dark" style="font-size: 16px">
+                            Current Balance
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ----------------------------------------------------------------------//Left side area end (Donut Chart)----------------------------------- -->
+
+                    <!-- ----------------------------------------------------------------------||Right site area start here---------------------------- -->
+                    <div
+                      class="col-lg-6 px-xl-3 mt-5 mt-lg-3 d-flex flex-column gap-3 gap-lg-0 justify-content-between"
+                    >
+                      <div class="chart-card bg-card">
+                        <div class="text-content-item">
+                          <p class="text-color text-style ">Balance</p>
+                          <p class="text-style2 text-white-dark depositAmt">2430</p>
+                        </div>
+                        <div class="graph">
+                          <div class="" id="balance-chart">
+                            <!-- <img src="./assets/images/icon/graph-2.png" alt="" /> -->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="chart-card bg-card">
+                        <div class="text-content-item">
+                          <p class="text-color text-style">Deposit</p>
+                          <p class="text-style2 text-white-dark depositAmt">1270</p>
+                        </div>
+                        <div class="graph">
+                          <div class="graph-line" id="line">
+                            <!-- <img src="./assets/images/icon/graph-2.png" alt="" /> -->
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="chart-card bg-card">
+                        <div class="text-content-item">
+                          <p class="text-style text-color">Withdraw</p>
+                          <p class="text-style2 text-white-dark depositAmt">1850</p>
+                        </div>
+                        <div class="graph">
+                          <div
+                            class="graph-line straight-line"
+                            id="second-line"
+                          >
+                            <!-- <img src="../assets/images/icon/graph-2.png" alt="" /> -->
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="chart-card bg-card">
+                        <div class="text-content-item">
+                          <p class="text-style text-color">Commission</p>
+                          <p class="text-style2 text-white-dark depositAmt">12.05</p>
+                        </div>
+                        <div class="graph">
+                          <div class="graph-line" id="bar-chart">
+                            <!-- <img src="../assets/images/icon/graph-2.png" alt="" /> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ----------------------------------------------------------------------//Right side area end here------------------------------ -->
+                  </div>
+                </div>
+                <!-- ----------------------------------------------------------------------//Balance area end here---------------------------------- -->
+
+                <!-- ----------------------------------------------------------------------||Best Performing area start here---------------------------------- -->
+                <div class="col-xl-5 col-xxl-6 ps-xl-5 mt-5 mt-xl-3">
+                  <div id="best-perform-content ">
+                    <div>
+                      <div class="d-flex justify-content-between mb-4">
+                        <h1 class="fs-5 bestPerform">Best Performing</h1>
+                        <div>
+                          <button class="primary-btn">More</button>
+                        </div>
+                      </div>
+                      <div
+                        class="d-flex flex-column justify-content-between"
+                        style="height: calc(360px - 56px)"
+                      >
+                        <div class="d-flex justify-content-between">
+                          <div class="d-flex gap-2">
+                            <div class="icon-container">
+                              <img
+                                src="../assets/images/icon/img-1.png"
+                                alt=""
+                              />
+                            </div>
+                            <div
+                              class="number px-1 rounded-5 d-flex align-items-center justify-content-center fs-6"
+                            >
+                              1
+                            </div>
+                            <div class="text-content">
+                              <p class="text-style text-color">Stake Casino</p>
+                              <p
+                                class="text-style2 text-white-dark text-uppercase fs-6 coinName"
+                              >
+                                Dice
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            class="d-flex flex-column justify-content-between"
+                          >
+                            <p class="mb-0 text-style text-color fs-6">279825,82 $</p>
+                            <p class="mb-0 coinName" style="font-size: 14px">
+                              90.42%
+                            </p>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                          <div class="d-flex gap-2">
+                            <div class="icon-container">
+                              <img
+                                src="../assets/images/icon/img-2.png"
+                                alt=""
+                              />
+                            </div>
+                            <div
+                              class="number px-1 rounded-5 d-flex align-items-center justify-content-center fs-6"
+                            >
+                              1
+                            </div>
+                            <div class="text-content">
+                              <p class="text-style text-color">Stake Casino</p>
+                              <p
+                                class="text-style2 text-white-dark text-uppercase fs-6 coinName"
+                              >
+                                Dice
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            class="d-flex flex-column justify-content-between"
+                          >
+                            <p class="mb-0 text-style text-color fs-6">279825,82 $</p>
+                            <p class="mb-0 coinName" style="font-size: 14px">
+                              90.42%
+                            </p>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                          <div class="d-flex gap-2">
+                            <div class="icon-container">
+                              <img
+                                src="../assets/images/icon/img-3.png"
+                                alt=""
+                              />
+                            </div>
+                            <div
+                              class="number px-1 rounded-5 d-flex align-items-center justify-content-center fs-6"
+                            >
+                              1
+                            </div>
+                            <div class="text-content">
+                              <p class="text-style text-color">Stake Casino</p>
+                              <p
+                                class="text-style2 text-white-dark text-uppercase fs-6 coinName"
+                              >
+                                Dice
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            class="d-flex flex-column justify-content-between"
+                          >
+                            <p class="mb-0 text-style fs-6">279825,82 $</p>
+                            <p class="mb-0 coinName" style="font-size: 14px">
+                              90.42%
+                            </p>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                          <div class="d-flex gap-2">
+                            <div class="icon-container">
+                              <img
+                                src="../assets/images/icon/img-4.png"
+                                alt=""
+                              />
+                            </div>
+                            <div
+                              class="number px-1 rounded-5 d-flex align-items-center justify-content-center fs-6"
+                            >
+                              1
+                            </div>
+                            <div class="text-content">
+                              <p class="text-style text-color">Stake Casino</p>
+                              <p
+                                class="text-style2 text-white-dark text-uppercase fs-6 coinName"
+                              >
+                                Dice
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            class="d-flex flex-column justify-content-between"
+                          >
+                            <p class="mb-0 text-style text-color fs-6">279825,82 $</p>
+                            <p class="mb-0 coinName" style="font-size: 14px">
+                              90.42%
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+                <!-- ----------------------------------------------------------------------//Best Performing area end here---------------------------------- -->
+              </div>
+            </div>
+            <!-- ---------------------------------------------------- Latest Transaction Table section start here ------------------------------------------------- -->
+            <div class="transection-container mt-5 mb-4">
+              <h1 class="fs-5 ps-3 transaction-title">Latest Transactions</h1>
+              <div class="table-content">
+                <div class="table-container w-100">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th class="table-head">Dessert (100g serving)</th>
+                        <th>Calories</th>
+                        <th>Fat (g)</th>
+                        <th>Carbs (g)</th>
+                        <th>Vat</th>
+                        <th>Protein (g)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center gap-4">
+                            <div class="icon-container">
+                              <img
+                                src="../assets/images/icon/img-1.png"
+                                alt=""
+                              />
+                            </div>
+                            <p class="mb-0">Pragmatic play</p>
+                          </div>
+                        </td>
+                        <td>159</td>
+                        <td>6</td>
+                        <td>24</td>
+                        <td>5%</td>
+                        <td>4</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center gap-4">
+                            <div class="icon-container">
+                              <img
+                                src="../assets/images/icon/img-2.png"
+                                alt=""
+                              />
+                            </div>
+                            <p class="mb-0">Ice cream sandwich</p>
+                          </div>
+                        </td>
+                        <td>237</td>
+                        <td>9</td>
+                        <td>37</td>
+                        <td>6%</td>
+                        <td>4.3</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="d-flex align-items-center gap-4">
+                            <div class="icon-container">
+                              <img
+                                src="../assets/images/icon/img-3.png"
+                                alt=""
+                              />
+                            </div>
+                            <p class="mb-0">Eclair</p>
+                          </div>
+                        </td>
+                        <td>262</td>
+                        <td>16</td>
+                        <td>24</td>
+                        <td>1%</td>
+                        <td>6</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- ---------------------------------------------------- Latest Transection section end here ------------------------------------------------- -->
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- script added -->
+
+    <script src="../bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
+    <script src="../bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+
+    <script src="../jQuery/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <!-- chart js -->
+    <script src="../assets/charts/donut.js"></script>
+    <script src="../assets/charts/areaChart.js"></script>
+    <script src="../assets/charts/lineChart.js"></script>
+    <script src="../assets/charts/barCharts.js"></script>
+    <script src="../assets/charts/balanceLineChart.js"></script>
+
+    <!-- page js -->
+    <script src="../script/script.js"></script>
+    <script src="../script/theme.js"></script>
+  </body>
+</html>
